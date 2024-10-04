@@ -1,0 +1,36 @@
+(A) Tarea:
+*getCosto()
+*getTiempo()
+*getCantidadSimples()
+*getTarea()
+
+Simple:
+-tarea set
+-costo set
+-tiempo set
+
+Compuesta:
+-Tarea[]
+-especialidad set/get
+-tiempoPorSimple
+//getTiempo() +10m*(Simple)
+
+{
+Metalmecanica:
+-Tarea[]
+-especialidad set/get
+//getTiempo() +15m*(Simple)
+}
+
+Repetitiva:
+-Tarea[]
+-repeticiones
+
+
+> Determinar el tiempo estimado para cualquier tipo de actividad 
+> Determinar el costo de cualquier tipo de actividad. 
+> Determinar la cantidad de tareas simples contenidas en una actividad (considerando 
+anidamientos). 
+
+
+

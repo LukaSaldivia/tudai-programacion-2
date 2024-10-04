@@ -1,0 +1,15 @@
+(A) Envio:
+-nroTracking
+*getDestino()
+*getPeso()
+
+
+Carta/Paquete:
+-destino
+-origen
+-aDomicilio?
+-peso
+
+Combo Postal:
+-Envio[]
+*addEnvio()

@@ -1,0 +1,25 @@
+(A) Calculo:
+- signo /get
+*calcular(a,b)
+*soloNumeros()
+*soloSignos()
+*getExpresion()
+
+Suma:
++
+
+Resta:
+-
+
+Division:
+/
+
+Multiplicación:
+*
+
+Potencia:
+^
+
+Raiz:
+<
+
