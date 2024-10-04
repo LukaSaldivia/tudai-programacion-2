@@ -1,20 +1,24 @@
+// En un congreso de Aritmética decidieron utilizar un sistema para organizar sus expresiones 
+// matemáticas. Las expresiones con las que trabajan son expresiones básicas, que incluyen 
+// suma, resta, producto, división, potencia y raíz.
+
 public class Main {
 
   public static void main(String[] args) {
     Numero uno = new Numero(1);
     Numero dos = new Numero(2);
     Numero tres = new Numero(3);
+    Numero cuatro = new Numero(4);
     Numero cinco = new Numero(5);
+    Numero seis = new Numero(6);
     Numero siete = new Numero(7);
     Numero ocho = new Numero(8);
+    Numero nueve = new Numero(9);
   
     Suma dosMasTres = new Suma(dos, tres);
     Multiplicacion m1 = new Multiplicacion(dosMasTres, cinco);
   
-    System.out.println(m1.mostrar() + " = "+ m1.resolver());
-    System.out.println(m1.numeros());
-    System.out.println(m1.signos());
-    System.out.println();
+    m1.consola();
 
 
 
@@ -23,21 +27,30 @@ public class Main {
 
     Potencia p1 = new Potencia(cincoMasCinco, tresMenosUno);
 
-    System.out.println(p1.mostrar() + " = "+ p1.resolver());
-    System.out.println(p1.numeros());
-    System.out.println(p1.signos());
-    System.out.println();
+    p1.consola();
 
     Suma sieteMasOcho = new Suma(siete, ocho);
     Resta cincoMenosTres = new Resta(cinco, tres);
     Division d1 = new Division(sieteMasOcho, cincoMenosTres);
 
-    System.out.println(d1.mostrar() + " = "+ d1.resolver());
-    System.out.println(d1.numeros());
-    System.out.println(d1.signos());
-    System.out.println();
+    d1.consola();
 
+    Raiz r1 = new Raiz(dos, cuatro);
 
+    r1.consola();
+
+    Division operacion = new Division(new Suma(new Potencia(dos, tres), cuatro), new Suma(uno, tres));
+
+    operacion.consola();
     
+    
+    Suma operacion2 = new Suma(new Division(new Suma(nueve, cuatro), new Suma(dos, cinco)), new Multiplicacion(seis, new Resta(tres, uno)));
+    
+    operacion2.consola();
+    
+    Multiplicacion operacion3 = new Multiplicacion(operacion, operacion2);
+    
+    operacion3.consola();
+
   }
 }

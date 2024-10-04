@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public abstract class Operacion extends Expresion {
-  Expresion a;
-  Expresion b;
+  protected Expresion a;
+  protected Expresion b;
 
   protected String signo;
 
