@@ -1,0 +1,12 @@
+Carta:
+-remitente
+-Regalo[] (String)
+
+Buzón:
+-niñosbuenos
+!!! Si un “niño malo” intenta depositar una carta en el 
+buzón, la lista de regalos correspondiente se vacía y se reemplaza el regalo por un “Trozo de 
+carbón”. Si un niño deposita más de una carta en el buzón, solo se considera la primera. 
+
+Niño:
+-DNI

@@ -1,0 +1,14 @@
+Entidad:
+-nombre
+*getEdad()
+*getFuerza()
+*getPeso()
+
+Personaje:
+> fuerzaBase : 125
+-edad
+-peso
+-fruta
+
+Tripulacion:
+-Personaje[]

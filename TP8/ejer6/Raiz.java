@@ -1,6 +1,6 @@
 public class Raiz extends Operacion {
   public Raiz(Expresion a, Expresion b){
-    this.signo = "v^";
+    this.signo = "V^";
     this.a = a;
     this.b = b;
   }
