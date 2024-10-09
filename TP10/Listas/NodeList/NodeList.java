@@ -37,12 +37,9 @@ public class NodeList<T> implements SimpleList<T> {
     int size = 0;
     Node<T> actual = new Node<T>(first);
     while (actual.next() != null) {
-      
       size++;
       actual = actual.next();
-
     }
-
     return size+1;
   }
 
@@ -55,14 +52,11 @@ public class NodeList<T> implements SimpleList<T> {
   public boolean contains(T obj) {
     boolean contains = false;
     Node<T> actual = first;
-
     while (!contains && actual != null && actual.get() != null) {
       contains = actual.get().equals(obj);
 
       actual = actual.next();
     }
-
-
     return contains;
   }
 
@@ -72,19 +66,12 @@ public class NodeList<T> implements SimpleList<T> {
       this.first = new Node<T>(obj);
       return;
     }
-
     Node<T> actual = first;
-
     while (actual.next() != null) {
       actual = actual.next();
     }
-
     actual.setNext(new Node<T>(obj));
-
     this.last = new Node<T>(obj);
-    
-    return;
-
   }
 
   @Override
@@ -107,14 +94,8 @@ public class NodeList<T> implements SimpleList<T> {
       actual.setNext(rightSide);
     }
     actual.setSelf(obj);
-    
-    
     updateLast();
     return actual.get();
-    
-    
-    
-    
   }
   
   @Override
@@ -139,10 +120,6 @@ public class NodeList<T> implements SimpleList<T> {
     
     updateLast();
     return actual.get();
-    
-    
-    
-    
   }
   
   @Override
@@ -153,10 +130,8 @@ public class NodeList<T> implements SimpleList<T> {
         this.first = first.next();
         return true;
       }
+
       Node<T> actual = first;
-      
-      
-      
       while (actual.next() != null) {
         if (actual.next().get().equals(obj)) {
           actual.setNext(actual.next().next());
@@ -166,14 +141,7 @@ public class NodeList<T> implements SimpleList<T> {
 
         actual = actual.next();
       }
-
-      
-
-
-
     }
-
-
     return false;
   }
 
@@ -225,9 +193,6 @@ public class NodeList<T> implements SimpleList<T> {
     }
 
     return actual.get();
-
-
-
   }
 
   @Override
@@ -281,6 +246,4 @@ public class NodeList<T> implements SimpleList<T> {
 
     last = new Node<T>(actual);
   }
-
-  
 }
