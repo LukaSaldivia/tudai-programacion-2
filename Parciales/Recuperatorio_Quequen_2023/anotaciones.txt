@@ -1,0 +1,35 @@
+(A) ElementoTarea:
+getCosto()
+getTiempo()
+getLista()
+getCopia(Condicion c)
+
+Tarea:
+String accion g && s
+double costo g && s
+int tiempo g && s
+
+Compuesta:
+String especialidad
+ElementoTarea[] actividades
+getCosto()
+getTiempo() (+10 por c/Simple)
+addTarea()
+
+Repetitiva:
+ElementoTarea[] actividades
+int repeticiones
+getCosto()
+getTiempo() (+0 por c/Simple)
+addTarea()
+
+Metalmecanica:
+ElementoTarea[] actividades
+getCosto()
+getTiempo() (+15 por c/Simple)
+addTarea()
+
+Restringida:
+ElementoTarea[] actividades
+Condicion condicion
+

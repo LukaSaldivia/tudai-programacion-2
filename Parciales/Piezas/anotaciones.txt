@@ -1,0 +1,31 @@
+Pieza:
+- nombre
+- descripcion
+* getPLA()
+* getColor()
+* getTiempo()
+* buscar(Condicion)
+
+- Simple:
+- PLA <- getPLA()
+- tiempo <- getTiempo()
+- color <- getColor() : ArrayList
+
+
+
+Compuesta:
+- Pieza[]
+- PLA_necesario (+1 por pieza simple)
+- tiempo (+45)
+- color (arraylist) (sin repetidos)
+- tiempo_por_pieza
+_ PLA_extra_por_simple
+_ addPieza()
+
+Diseño:
+- Condicion
+
+Exclusiva:
+_ costo_exclusividad
+_ (buscar -> ArrayList<>())
+
